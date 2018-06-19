@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>0.2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/newWindow.css">
+</head>
+<body >
+    <div class="backgr"></div>
+    <div onclick="iclose()" class="blackconteiner hide">
+            <div class="size ">
+                <div class="posRelativ">
+                <img class="bigImg" alt="">
+                <a  onclickonclick="iclose()"="iclose()" href="#portfolio"><img class="btnclose" src="img/imgsmol/bg-close@2x.png" alt=""></a>
+            </div>
+            </div>
+        </div>
+    <nav>
+        <div class="size">
+        <div class="logo"></div>
+        <div ><a href="#"><div class="nemubutton glyphicon glyphicon-th-list" ></div></a></div>
+        <div class="menuSmol">
+            <div class="menu">
+                <a onclick="mainAll('.smal_2')" href="#main">головна</a>
+                <a onclick="contacts('.slShow')" href="#show">слайдшоу</a>
+                <a onclick="contacts('.services')" href="#services">послуги</a>
+                <a onclick="contacts('.portfolio')" href="#portfolio">портфоліо</a>
+                <a onclick="contacts('.me')" href="#about me">про мене</a>
+                <a onclick="contacts('.blog')" href="#blog">блог</a>
+                <a onclick="contacts('.contacts')" href="#contacts">контакти</a>
+            </div> 
+        </div>          
+        </div>
+        <div class="clearfix"></div>
+    </nav>
+    <main class="row size">
+        <div class="col-md-12 conteiner slShow">
+            <div class="imgconteiner posRelativ">
+                <a onclick="prev()" href="#next"><div class="button b_Left" ></div></a>
+                <a onclick="next()" href="#prev"><div class="button b_Right" ></div></a>
+                <img  id="foto1" src="img/pic.png" alt="">
+                <img  id="foto2" style="display:none" src="img/pic1.png" alt="">
+            </div>
+            <div class="textconteiner">
+                <h3>Зловити кадр</h3>
+                <p>Якщо можна було б охарактеризувати себе парою слів, я б сказала - ходяча цікавість.</p>
+                <p>Люблю натуральність у всьому, тому найчастіше знімаю при природному освітленні.</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-4 conteiner smal services">
+            <div class="imgconteiner">
+                <img src="img/pic7.jpg" alt=""></li>
+            </div>    
+            <div class="textconteiner">
+                <h3>мої послуги</h3>
+                <p>В основном сімейні фотосессії і весільлля</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-8 conteiner medium services">
+            <div class="imgconteiner">
+                <img src="img/pic11.jpg" alt="">
+            </div>
+            <div class="textconteiner">
+                <h3>я можу запропонувати</h3>
+                <h4>Сім'я</h4>
+                <p>Сімейні фотографії, діти</p>
+                <h4>Свята</h4>
+                <p>Дні нарождення, весільлля, випускні</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-4 conteiner smal portfolio">
+            <div class="imgconteiner">
+                <img src="img/portfolio.jpg" alt="">
+            </div>
+            <div class="textconteiner">
+                <h3>мої роботи</h3>
+                <p>Подивитись все портфоліо</p>
+                <p></p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div onclick="showBigImg('img/003.jpg')" class="portfolio p_2 col-md-4 conteiner smal_2"><img src="img/pic15.jpg" alt=""></div>
+        <div onclick="showBigImg('img/004.jpg')" class="portfolio p_2 col-md-4 conteiner smal_2"><img src="img/pic2.jpg" alt=""></div>
+        <div onclick="showBigImg('img/002.jpg')" class="portfolio p_2 col-md-4 conteiner smal_2"><img src="img/pic4.jpg" alt=""></div>
+        <div onclick="showBigImg('img/005.jpg')" class="portfolio p_2 col-md-4 conteiner smal_2"><img src="img/pic5.jpg" alt=""></div>
+        <div onclick="showBigImg('img/006.jpg')" class="portfolio p_2 col-md-4 conteiner smal_2"><img src="img/pic9.jpg" alt=""></div>
+        <div class="col-md-4 conteiner smal me">
+            <div class="imgconteiner">
+                <img src="img/pic7.jpg" alt="">
+            </div>
+            <div class="textconteiner">
+                <h3>про мене</h3>
+                <p>Починалося все з простого захоплення, але я рівень за рівнем розвиваю свою майстерність шляхом практики, дослідів і вивчення нових технік і прийомів.</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-4 conteiner smal blog">
+            <div class="imgconteiner">
+                <img src="img/pic8.jpg" alt="">
+            </div>
+            <div class="textconteiner">
+                <h3>репетиція</h3>
+                <p>І ще один улюблений кадр з репетиції кіно-концерту. Простота і лаконічність деталей - все, як я люблю :)</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-4 conteiner smal blog">
+            <div class="imgconteiner">    
+                <img src="img/pic19.jpg" alt="">
+            </div>
+            <div class="textconteiner">
+                <h3>другий пілот</h3>
+                <p>Нещодавно пощастило попрацювати на дуже цікавій фотосесії, де я була "другим пілотом" - знімала, як він знімав.</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-4 conteiner smal blog">
+            <div class="imgconteiner">    
+                <img src="img/pic3.jpg" alt="">
+            </div>
+            <div class="textconteiner">
+                <h3>ну і погода</h3>
+                <p>Погода називається "Добре, що я фрілансер" :)</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-4 conteiner smal blog">
+            <div class="imgconteiner">    
+                <img src="img/pic5 (1).jpg" alt="">
+            </div>
+            <div class="textconteiner">
+                <h3>вдале фото</h3>
+                <p>Іноді буває так, що спонтанно зроблена фотографія виходить в рази краще і крутіше постановочних!</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-4 conteiner smal blog">
+            <div class="imgconteiner">    
+                <img src="img/pic4 (1).jpg" alt="">
+            </div>
+            <div class="textconteiner">
+                <h3>малий модник</h3>
+                <p>Коли ваша дитина народилася модником :) В кожній родині є такий стильний!</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-4 conteiner smal blog">
+            <div class="imgconteiner">    
+                <img src="img/pic2 (1).jpg" alt="">
+            </div>
+            <div class="textconteiner">
+                <h3>радість</h3>
+                <p>Вирішили тут трохи побавитися і влаштувати свій особистий "цирк"</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-4 conteiner smal contacts">
+            <div class="imgconteiner">    
+                <img src="img/contact.jpg" alt="">
+            </div>
+            <div class="textconteiner">
+                <h3>зв'язатись зі мною</h3>
+                <p>вул. Зелена
+                    м. Львів</p>
+                <p>E-Mail: hello@domain.com
+                    Phone:+7-919-616-2655</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-8 conteiner medium contacts">
+            <div class="imgconteiner">    
+                <img src="img/contact1.jpg" alt="">
+            </div>
+            <div class="textconteiner">
+                <h3>написати мені</h3>         
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+
+
+
+
+    </main>
+    <footer>
+        <div class="size">
+            <a href=""><img class="smol" src="img/imgsmol/bg-tweat.png" alt=""></a>
+            <a href=""><img class="smol" src="img/imgsmol/bg-facebook.png" alt=""></a>
+            <a href=""><img class="smol" src="img/imgsmol/bg-dribble.png" alt=""></a>
+            <a href=""><img class="smol" src="img/imgsmol/bg-vimeo.png" alt=""></a>
+            <a href=""><img class="smol" src="img/imgsmol/bg-googleplus.png" alt=""></a>
+        </div>
+        <p>© 2016, BuySite4u.com</p>
+        <p><a href="">Заказать разработку сайта в SimplyStudio.net</a></p>
+    </footer>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>

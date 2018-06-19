@@ -1,0 +1,79 @@
+nav{
+    background-color: black;
+    width: 100%;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    float: left;
+    background-image: url("../img/logo01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px;
+}
+.nemubutton{
+    height: 56px;
+    width: 56px;
+    padding: 10px;
+    font-size: 36px;
+    display: none;
+    margin: 20px 0;
+}
+.menu{
+    float: right;
+}
+.menu a {
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 993px) {
+    .logo{
+        width: 160px;
+        height: 56px;
+    }
+    .menu{
+        padding: 42px 10px;
+    }
+}
+@media screen and (max-width: 993px) {
+    .logo{
+        background-image: url("../img/logo02.png");
+        width: 200px;
+        height: 30px;
+        margin:35px  0 ;
+    }
+    .nemubutton{
+        display: block;
+        display: inline-block;
+        float: right;
+        color: white;
+        background-color: darkgrey;
+    }
+    .menuSmol{
+        display: none;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        width: 100%;
+        left: 0px;
+        background-color: black;
+        padding: 10px;
+    }
+    .menu a{
+        background-color: darkgrey;
+        border-bottom: solid 1px;
+        border-bottom-color:black;
+    }
+}
