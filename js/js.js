@@ -59,16 +59,11 @@ var int5cek=setInterval(slideshow,5000);
 
 
 function iclose(){
-    $('.bigImg').fadeOut(500)
     close();
     setTimeout(function close(){
-        $('.blackconteiner').hide()},500);
-    // var a=document.getElementsByClassName('blackconteiner');
-    // a[0].classList.add('hide');
+        $('.blackconteiner').addClass("hide")},500);
 }
 function showBigImg(w){
-    var a=document.getElementsByClassName('blackconteiner')
-    a[0].classList.remove('hide');
-    var b=document.getElementsByClassName('bigImg')
-    b[0].src=w;
+    $('.blackconteiner').removeClass('hide');
+    $('.bigImg').attr('src', w);
 }
